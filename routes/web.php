@@ -8,5 +8,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/data', [DataController::class, 'index'])->name('data.index');
+// Route::get('/data', [DataController::class, 'index'])->name('data.index');
 Route::post('/data/import', [DataController::class, 'import'])->name('data.import');
+Route::get('/data/export', [DataController::class, 'export'])->name('data.export');
