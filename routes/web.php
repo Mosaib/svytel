@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/data', [DataController::class, 'index'])->name('data.index');
+Route::post('/data/import', [DataController::class, 'import'])->name('data.import');
